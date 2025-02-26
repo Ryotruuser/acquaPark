@@ -1,0 +1,10 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.cabecalho{
+    padding: 0 2rem;
+    display: flex;
+    .cabecalho__logo{
+        @include mixins.ff-fs-cl(variaveis.$ft-titulos, 3rem, variaveis.$cor-primaria);
+    }
+}

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(to right bottom, #18b0b0, #6cc2a9, #a3d3a9, #d3e2b5, #fcf1cc);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+
+.cabecalho {
+  padding: 0 2rem;
+  display: flex;
+}
+.cabecalho .cabecalho__logo {
+  font-family: "Lobster", sans-serif;
+  font-size: 3rem;
+  color: #072152;
+}/*# sourceMappingURL=style.css.map */

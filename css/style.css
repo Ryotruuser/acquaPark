@@ -10,12 +10,48 @@ body {
   height: 100vh;
 }
 
-.cabecalho {
+header {
   padding: 0 2rem;
-  display: flex;
+  gap: 10vw;
+  align-items: center;
+  justify-content: start;
 }
-.cabecalho .cabecalho__logo {
+header nav, header nav .cabecalho__nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .cabecalho__logo {
+  cursor: pointer;
   font-family: "Lobster", sans-serif;
   font-size: 3rem;
   color: #072152;
+}
+header nav .cabecalho__nav__list {
+  gap: 2rem;
+  list-style-type: none;
+}
+header nav .cabecalho__nav__list .cabecalho__nav__list-item .cabecalho__nav__list-link {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #072152;
+}
+header nav .cabecalho__nav__list .cabecalho__nav__list-item .cabecalho__nav__list-link:hover {
+  font-weight: 600;
+}
+header nav .cabecalho__nav_btn-ticket {
+  padding: 0.5rem 3rem;
+  border-radius: 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #18b0b0;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+}
+header nav .cabecalho__nav_btn-ticket:hover {
+  color: #000;
+  background-color: #f9a553;
 }/*# sourceMappingURL=style.css.map */

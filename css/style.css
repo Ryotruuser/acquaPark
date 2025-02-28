@@ -10,37 +10,28 @@ body {
   height: 100vh;
 }
 
-header {
+.cabecalho .cabecalho__nav__list {
+  list-style-type: none;
   padding: 0 2rem;
-  gap: 10vw;
-  align-items: center;
-  justify-content: start;
-}
-header nav, header nav .cabecalho__nav__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr repeat(4, auto) 1fr;
+  justify-items: center;
   align-items: center;
 }
-header nav .cabecalho__logo {
+.cabecalho .cabecalho__nav__list .cabecalho__logo {
+  justify-self: flex-start;
+}
+.cabecalho .cabecalho__nav__list .cabecalho__logo .cabecalho__logo_titulo {
   cursor: pointer;
   font-family: "Lobster", sans-serif;
   font-size: 3rem;
   color: #072152;
 }
-header nav .cabecalho__nav__list {
-  gap: 2rem;
-  list-style-type: none;
+.cabecalho .cabecalho__nav__list .cabecalho__nav__list-btn {
+  justify-self: flex-end;
 }
-header nav .cabecalho__nav__list .cabecalho__nav__list-item .cabecalho__nav__list-link {
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
-  color: #072152;
-}
-header nav .cabecalho__nav__list .cabecalho__nav__list-item .cabecalho__nav__list-link:hover {
-  font-weight: 600;
-}
-header nav .cabecalho__nav_btn-ticket {
+.cabecalho .cabecalho__nav__list .cabecalho__nav__list-btn .cabecalho__nav_btn-ticket {
   padding: 0.5rem 3rem;
   border-radius: 16px;
   font-family: "Poppins", sans-serif;
@@ -51,7 +42,19 @@ header nav .cabecalho__nav_btn-ticket {
   font-weight: 500;
   text-decoration: none;
 }
-header nav .cabecalho__nav_btn-ticket:hover {
+.cabecalho .cabecalho__nav__list .cabecalho__nav__list-btn .cabecalho__nav_btn-ticket:hover {
   color: #000;
   background-color: #f9a553;
+}
+.cabecalho .cabecalho__nav__list .cabecalho__nav__list-item .cabecalho__nav__list-link {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #072152;
+}
+.cabecalho .cabecalho__nav__list .cabecalho__nav__list-item .cabecalho__nav__list-link:hover {
+  transition: 0.5s;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #0086ac;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

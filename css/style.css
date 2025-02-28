@@ -4,10 +4,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(to right bottom, #18b0b0, #6cc2a9, #a3d3a9, #d3e2b5, #fcf1cc);
+  background: linear-gradient(to right bottom, #70e7dc, #70e7dc, #08c7db, #03bad6, #0380aa);
+  background-image: url(/assets/imgs/bg/bg.jpg);
+  background-position: center top;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 100vh;
 }
 
 .cabecalho .cabecalho__nav__list {
@@ -55,6 +56,6 @@ body {
 .cabecalho .cabecalho__nav__list .cabecalho__nav__list-item .cabecalho__nav__list-link:hover {
   transition: 0.5s;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #0086ac;
+  border-bottom: 2px solid #0380aa;
   font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

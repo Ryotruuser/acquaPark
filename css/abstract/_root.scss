@@ -4,8 +4,10 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: variaveis.$gradiente-primario ;
+    background: variaveis.$gradiente-primario ;
+    background-image: url(/assets/imgs/bg/bg.jpg);
+    background-position: center top;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
 }
+

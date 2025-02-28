@@ -4,18 +4,19 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: linear-gradient(to right bottom, #70e7dc, #70e7dc, #08c7db, #03bad6, #0380aa);
+  background: linear-gradient(to bottom, #70e7dc, #70e7dc, #08c7db, #03bad6, #0380aa);
   background-image: url(/assets/imgs/bg/bg.jpg);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .cabecalho .cabecalho__nav__list {
   list-style-type: none;
   padding: 0 2rem;
   display: grid;
-  gap: 3rem;
+  gap: 2rem;
   grid-template-columns: 1fr repeat(4, auto) 1fr;
   justify-items: center;
   align-items: center;

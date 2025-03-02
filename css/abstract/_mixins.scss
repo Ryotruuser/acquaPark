@@ -8,3 +8,9 @@
     font-size: $f-size;
     color: $f-color;
 }
+
+@mixin ds-fd-ai($d-flex,$f-direction,$a-items){
+    display: $d-flex;
+    flex-direction: $f-direction;
+    align-items: $a-items;
+}

@@ -1,6 +1,12 @@
 @use './variaveis';
 
 body{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "footer footer footer";
     margin: 0;
     padding: 0;
     box-sizing: border-box;

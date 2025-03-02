@@ -2,7 +2,8 @@
 @use '../abstract/mixins';
 
 .cabecalho{
-
+    grid-area: header;
+    align-self: center;
     .cabecalho__nav__list{
         list-style-type: none;
         padding: 0 2rem;

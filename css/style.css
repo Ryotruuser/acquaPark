@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 body {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  grid-template-areas: "header header header" "aside main main" "footer footer footer";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,6 +16,10 @@ body {
   background-attachment: fixed;
 }
 
+.cabecalho {
+  grid-area: header;
+  align-self: center;
+}
 .cabecalho .cabecalho__nav__list {
   list-style-type: none;
   padding: 0 2rem;
@@ -59,4 +67,67 @@ body {
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #0380aa;
   font-weight: 600;
+}
+
+.mlateral {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.mlateral .mlateral__card_logo {
+  font-family: "Lobster", sans-serif;
+  font-size: 2rem;
+  color: #072152;
+}
+.mlateral .mlateral__card {
+  width: 60%;
+  padding: 2rem;
+  cursor: pointer;
+  transition: 0.8s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.46);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.mlateral .mlateral__card:hover {
+  background: rgba(255, 255, 255, 0.86);
+}
+.mlateral .mlateral__card .mlateral__card_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mlateral .mlateral__card .mlateral__card_info .mlateral__card_info_titulo {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 500;
+}
+.mlateral .mlateral__card .mlateral__card_info .mlateral__card_info_texto {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 390;
+  line-height: 1.6rem;
+}
+.mlateral .mlateral__card .mlateral__card_info .mlateral__card_info_btn {
+  text-decoration: none;
+  padding: 0.5rem 5rem;
+  background: #072152;
+  outline: none;
+  border: none;
+  border-radius: 16px;
+  font-family: "Lobster", sans-serif;
+  font-size: 1.2rem;
+  color: #fcf1cc;
+}
+.mlateral .mlateral__card .mlateral__card_info .mlateral__card_info_btn:hover {
+  background: #18b0b0;
+  color: #000;
 }/*# sourceMappingURL=style.css.map */

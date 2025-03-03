@@ -12,10 +12,11 @@
         width: 70%;
         padding: 1rem;
         cursor: pointer;
-        transition: .8s;
+        transition: 1s;
         &:hover{
             background: rgba(255, 255, 255, 0.86);
         }
+
         
         @include mixins.ds-fd-ai-jc(flex, column, center);
         background: rgba(255, 255, 255, 0.46);

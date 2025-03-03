@@ -1,12 +1,16 @@
 @use './variaveis';
 
+*{
+    scroll-behavior: smooth;
+}
 body{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 20vh 80vh;
+    grid-template-rows: 20vh 80vh 100vh;
     grid-template-areas: 
     "header header"
-    "aside main";
+    "aside initial"
+    "gallery gallery";
     margin: 0;
     padding: 0;
     box-sizing: border-box;

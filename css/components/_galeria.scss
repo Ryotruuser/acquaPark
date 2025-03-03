@@ -1,0 +1,9 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.galeria{
+    grid-area: gallery;
+    width: 100vw;
+    height: 100vh;
+    background: red;
+}

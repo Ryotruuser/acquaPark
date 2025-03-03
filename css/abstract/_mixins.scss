@@ -9,8 +9,15 @@
     color: $f-color;
 }
 
-@mixin ds-fd-ai($d-flex,$f-direction,$a-items){
+@mixin ds-fd-ai-jc($d-flex,$f-direction,$a-items,$j-content:center){
     display: $d-flex;
     flex-direction: $f-direction;
     align-items: $a-items;
+    justify-content: $j-content;
+}
+
+@mixin ul($u-select:none){
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
 }

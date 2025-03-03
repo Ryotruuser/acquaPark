@@ -2,20 +2,22 @@
 @use '../abstract/mixins';
 
 .mlateral{
-    @include mixins.ds-fd-ai(flex, column, flex-end);
+    margin-top: -2rem;
+    @include mixins.ds-fd-ai-jc(flex, column, center, flex-start);
     .mlateral__card_logo{
-        @include mixins.ff-fs-cl(variaveis.$ft-titulos, 2rem, variaveis.$cor-primaria);
+        @include mixins.ul(none);
+        @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.2rem, variaveis.$cor-primaria);
     }
     .mlateral__card{
-        width: 60%;
-        padding: 2rem;
+        width: 70%;
+        padding: 1rem;
         cursor: pointer;
         transition: .8s;
         &:hover{
             background: rgba(255, 255, 255, 0.86);
         }
         
-        @include mixins.ds-fd-ai(flex, column, center);
+        @include mixins.ds-fd-ai-jc(flex, column, center);
         background: rgba(255, 255, 255, 0.46);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -23,22 +25,23 @@
         -webkit-backdrop-filter: blur(5px);
         border: 1px solid rgba(255, 255, 255, 0.3);
         .mlateral__card_info{
-            @include mixins.ds-fd-ai(flex, column, center);
+            @include mixins.ds-fd-ai-jc(flex, column, center);
             .mlateral__card_info_titulo{
                 text-align: center;
-                @include mixins.ff-fs-cl(variaveis.$ft-alternativo, 1.2rem, variaveis.$cor-preto);
-                font-weight: 500;
+                @include mixins.ff-fs-cl(variaveis.$ft-alternativo, .8rem, variaveis.$cor-preto);
+                font-weight: 400;
             }
             .mlateral__card_info_texto{
-                @include mixins.ff-fs-cl(variaveis.$ft-alternativo, 1rem, variaveis.$cor-preto);
+                @include mixins.ff-fs-cl(variaveis.$ft-alternativo, .85rem, variaveis.$cor-preto);
                 font-weight: 390;
-                line-height: 1.6rem;
+                line-height: 1.2rem;
             }
             .mlateral__card_info_btn{
                 text-decoration: none;
                 padding: .5rem 5rem;
                 background: variaveis.$cor-primaria;
                 outline: none;
+                transition: .3s;
                 border: none;
                 border-radius: 16px;
                 @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.2rem, variaveis.$cor-quarternaria);

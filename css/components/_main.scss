@@ -1,2 +1,46 @@
 @use '../abstract/variaveis';
 @use '../abstract/mixins';
+
+.principal{
+    @include mixins.ds-fd-ai-jc(flex, column, flex-start, flex-end);
+    padding: 2rem;
+    .principal__container{
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.46);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        //
+        @include mixins.ds-fd-ai-jc(flex, row, center,space-around);
+        gap: 2rem;
+        padding: 1rem 3rem;
+        transition: .8s;
+        &:hover{
+            background: rgba(255, 255, 255, 0.76);
+            backdrop-filter: blur(3px);
+            
+        }
+        .principal__container_column{
+            @include mixins.ds-fd-ai-jc(flex, column, center);
+            .principal__container_colunm_titulo{
+                text-transform: capitalize;
+                @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.2rem, variaveis.$cor-primaria);
+                font-weight: 400; 
+            }
+            .principal__container_colunm_btn{
+                text-decoration: none;
+                padding: .5rem 5rem;
+                background: variaveis.$cor-primaria;
+                border-radius: 16px;
+                transition: .3s;
+                @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.2rem, variaveis.$cor-quarternaria);
+                &:hover{
+                    background: variaveis.$cor-secundaria;
+                    color: variaveis.$cor-preto;
+                }
+            }
+        }
+    }
+}

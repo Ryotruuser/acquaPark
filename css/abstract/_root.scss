@@ -2,17 +2,17 @@
 
 body{
     display: grid;
-    grid-template-columns: 1.3fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 20vh 80vh;
     grid-template-areas: 
-    "header header header"
-    "aside main main"
-    "footer footer footer";
+    "header header"
+    "aside main";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background: variaveis.$gradiente-primario ;
     background-image: url(/assets/imgs/bg/bg.jpg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

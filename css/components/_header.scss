@@ -14,6 +14,7 @@
         align-items: center;
         .cabecalho__logo{
             justify-self: flex-start;
+            @include mixins.ul(none);
             .cabecalho__logo_titulo{
                 cursor: pointer;
                 @include mixins.ff-fs-cl(variaveis.$ft-titulos, 3rem, variaveis.$cor-primaria);
@@ -22,6 +23,7 @@
         .cabecalho__nav__list-btn{
             justify-self: flex-end;
             .cabecalho__nav_btn-ticket{
+                transition: .3s;
                 padding: .5rem 3rem;
                 border-radius: 16px;
                 @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-branco);

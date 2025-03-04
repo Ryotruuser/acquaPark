@@ -22,7 +22,7 @@
                 </li>
 
                 <li class="cabecalho__nav__list-item">
-                    <a href="#" class="cabecalho__nav__list-link">Galeria</a>
+                    <a href="#galeria" class="cabecalho__nav__list-link">Galeria</a>
                 </li>
 
                 <li class="cabecalho__nav__list-item">
@@ -75,7 +75,7 @@
 
     </section>
     
-    <section class="galeria">
+    <section class="galeria" id="galeria">
                 
         <div class="splide" role="group" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
@@ -104,61 +104,68 @@
           </div>
 
         <div class="galeria__comentarios">
-            <ul class="galeria__comentarios__card_list">
-                <li class="galeria__comentarios__card_item ">
-                    <img src="/assets/imgs/clientes/cl1.png" alt="foto de perfil do cliente" class="galeria__comentarios__card_img">
-                    <div class="galeria__comentarios__card__item_infos">
-                        <h2 class="galeria__comentarios__card_titulo">Juliciano Maia</h2>
-                        <p class="galeria__comentarios__card_texto"><span class="aspas">“ </span>A galera adorou! Muita adrenalina e diversão o dia todo. Perfeito pra curtir com os amigos e sair da rotina!<span class="aspas"> ”</span></p>
-                    </div>
-                </li>
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example" id="splide-comentarios">
+                <div class="splide__track" >
+                      <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img class="splide__img" src="assets/imgs/clientes/cl1.png" alt="Foto do cliente">
+                            <div class="splide__infos">
+                                <h2 class="splide__titulo">Juliciano Maia</h2>
+                                <p class="splide__texto">“A galera adorou! Muita adrenalina e diversão o dia todo. Perfeito pra curtir com os amigos e sair da rotina!”</p>
+                            </div>
+                        </li>
 
-                <li class="galeria__comentarios__card_item">
-                    <img src="/assets/imgs/clientes/cl2.png" alt="foto de perfil do cliente" class="galeria__comentarios__card_img">
-                    <div class="galeria__comentarios__card__item_infos">
-                        <h2 class="galeria__comentarios__card_titulo">Beatriz Nunes</h2>
-                        <p class="galeria__comentarios__card_texto"><span class="aspas">“ </span>Foi ótimo passar o dia em família! Tem atrações para todas as idades e o ambiente é super agradável. Recomendo!<span class="aspas"> ”</span></p>
-                    </div>
-                </li>
+                        <li class="splide__slide">
+                            <img class="splide__img" src="assets/imgs/clientes/cl2.png" alt="Foto do cliente">
+                            <div class="splide__infos">
+                                <h2 class="splide__titulo">Beatriz Nunes</h2>
+                                <p class="splide__texto">“Foi ótimo passar o dia em família! Tem atrações para todas as idades e o ambiente é super agradável. Recomendo!”</p>
+                            </div>
+                        </li>
 
-                <li class="galeria__comentarios__card_item ">
-                    <img src="/assets/imgs/clientes/cl3.png" alt="foto de perfil do cliente" class="galeria__comentarios__card_img">
-                    <div class="galeria__comentarios__card__item_infos">
-                        <h2 class="galeria__comentarios__card_titulo">Carla e Rafael Souza, com o filho Lucas</h2>
-                        <p class="galeria__comentarios__card_texto"><span class="aspas">“ </span>Nos divertimos bastante, mas ficamos tristes por não poder levar nosso cãozinho. Seria perfeito se o parque fosse pet-friendly!<span class="aspas"> ”</span></p>
-                    </div>
-                </li>
+                        <li class="splide__slide">
+                            <img class="splide__img" src="assets/imgs/clientes/cl3.png" alt="Foto do cliente">
+                            <div class="splide__infos">
+                                <h2 class="splide__titulo">Carla e Rafael Souza, com o filho Lucas</h2>
+                                <p class="splide__texto">“Nos divertimos bastante, mas ficamos tristes por não poder levar nosso cãozinho. Seria perfeito se o parque fosse pet-friendly! <span><img src="/assets/imgs/clientes/dog.svg" alt=""></span>”</p>
+                            </div>
+                        </li>
 
-                <li class="galeria__comentarios__card_item">
-                    <img src="/assets/imgs/clientes/cl4.png" alt="foto de perfil do cliente" class="galeria__comentarios__card_img">
-                    <div class="galeria__comentarios__card__item_infos">
-                        <h2 class="galeria__comentarios__card_titulo">Marcelo Teixeira, com o filho Gabriel</h2>
-                        <p class="galeria__comentarios__card_texto"><span class="aspas">“ </span>Foi um dia incrível com meu filho! As atrações são seguras e muito divertidas. Já estamos planejando nossa próxima visita!<span class="aspas"> ”</span></p>
-                    </div>
-                </li>
+                        <li class="splide__slide">
+                            <img class="splide__img" src="assets/imgs/clientes/cl4.png" alt="Foto do cliente">
+                            <div class="splide__infos">
+                                <h2 class="splide__titulo">Marcelo Teixeira, com o filho Gabriel</h2>
+                                <p class="splide__texto">“Foi um dia incrível com meu filho! As atrações são seguras e muito divertidas. Já estamos planejando nossa próxima visita!”</p>
+                            </div>
+                        </li>
 
-                <li class="galeria__comentarios__card_item">
-                    <img src="/assets/imgs/clientes/cl5.png" alt="foto de perfil do cliente" class="galeria__comentarios__card_img">
-                    <div class="galeria__comentarios__card__item_infos">
-                        <h2 class="galeria__comentarios__card_titulo">Amanda Torres</h2>
-                        <p class="galeria__comentarios__card_texto"><span class="aspas">“ </span>Minhas meninas se divertiram demais! O parque tem opções para todas as idades e nos sentimos super seguras e acolhidas. Voltaremos com certeza!<span class="aspas"> ”</span></p>
-                    </div>
-                </li>
+                        <li class="splide__slide">
+                            <img class="splide__img" src="assets/imgs/clientes/cl5.png" alt="Foto do cliente">
+                            <div class="splide__infos">
+                                <h2 class="splide__titulo">Amanda Torres</h2>
+                                <p class="splide__texto">“Minhas meninas se divertiram demais! O parque tem opções para todas as idades e nos sentimos super seguras e acolhidas. Voltaremos com certeza!”</p>
+                            </div>
+                        </li>
 
-                <li class="galeria__comentarios__card_item">
-                    <img src="/assets/imgs/clientes/cl6.png" alt="foto de perfil do cliente" class="galeria__comentarios__card_img">
-                    <div class="galeria__comentarios__card__item_infos">
-                        <h2 class="galeria__comentarios__card_titulo">Tenzin Wangchuk</h2>
-                        <p class="galeria__comentarios__card_texto"><span class="aspas">“ </span>Aproveitei um dia de folga e foi uma experiência relaxante e revigorante. Ambiente limpo, bem organizado e cheio de boas energias!<span class="aspas"> ”</span></p>
-                    </div>
-                </li>
+                        <li class="splide__slide">
+                            <img class="splide__img" src="assets/imgs/clientes/cl6.png" alt="Foto do cliente">
+                            <div class="splide__infos">
+                                <h2 class="splide__titulo">Tenzin Wangchuk</h2>
+                                <p class="splide__texto">“Aproveitei um dia de folga e foi uma experiência relaxante e revigorante. Ambiente limpo, bem organizado e cheio de boas energias!”</p>
+                            </div>
+                        </li>
 
-            </ul>
+                      </ul>
+                </div>
+            </div>
+
+
         </div>
     </section>
 
 
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.js"></script>
     <script>
         var splide = new Splide( '.splide',{
             type  : 'fade',
@@ -166,6 +173,25 @@
             loop: true,
         } );
         splide.mount();
+
+        var splideComentarios = new Splide ('#splide-comentarios',{
+            direction: 'ttb',
+            type: 'loop',
+            pagination: false, 
+            arrows: false,
+            perPage: 5,
+            gap: '20px',
+            height: '100%',
+            width: '100%',
+            autoplay: true,
+            pauseOnHover: false,
+            pauseOnFocus: true,
+            interval: 5000,
+            easing: 'linear',
+            speed: 5000,   
+        });
+        splideComentarios.mount();
+
     </script>
 </body>
 

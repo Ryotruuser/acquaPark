@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
-* {
+html {
   scroll-behavior: smooth;
 }
 
@@ -251,56 +251,50 @@ body {
   z-index: 1;
   width: 30vw;
   height: 100%;
-  padding: 0 0.5rem;
-  overflow: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
+  padding: 0 0.5rem;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.galeria .galeria__comentarios .galeria__comentarios__card_list {
-  list-style-type: none;
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+.galeria .galeria__comentarios #splide-comentarios .splide__arrow, .galeria .galeria__comentarios #splide-comentarios .splide__pagination {
+  opacity: 0;
 }
-.galeria .galeria__comentarios .galeria__comentarios__card_list .galeria__comentarios__card_item {
-  background: rgba(112, 231, 220, 0.13);
-  border-radius: 16px;
-  padding: 0 1rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
-  backdrop-filter: blur(0.9px);
-  -webkit-backdrop-filter: blur(0.9px);
-  border: 1px solid rgba(112, 231, 220, 0.2);
+.galeria .galeria__comentarios #splide-comentarios .splide__track .splide__list .splide__slide {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  height: 20% !important;
+  padding: 0 0.5rem;
   gap: 10px;
+  background: rgba(112, 231, 220, 0.09);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(1.6px);
+  -webkit-backdrop-filter: blur(1.6px);
+  border: 1px solid rgba(112, 231, 220, 0.15);
 }
-.galeria .galeria__comentarios .galeria__comentarios__card_list .galeria__comentarios__card_item .galeria__comentarios__card_img {
-  width: 100px;
-  height: 100px;
+.galeria .galeria__comentarios #splide-comentarios .splide__track .splide__list .splide__slide .splide__img {
+  width: 120px;
   border-radius: 360px;
 }
-.galeria .galeria__comentarios .galeria__comentarios__card_list .galeria__comentarios__card_item .galeria__comentarios__card__item_infos .galeria__comentarios__card_titulo {
-  font-family: "Merienda", cursive;
-  font-size: 1rem;
-  color: #072152;
-  font-weight: 700;
-}
-.galeria .galeria__comentarios .galeria__comentarios__card_list .galeria__comentarios__card_item .galeria__comentarios__card__item_infos .aspas {
+.galeria .galeria__comentarios #splide-comentarios .splide__track .splide__list .splide__slide .splide__infos .splide__titulo {
   font-family: "Lobster", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #072152;
+  font-weight: 400;
 }
-.galeria .galeria__comentarios .galeria__comentarios__card_list .galeria__comentarios__card_item .galeria__comentarios__card__item_infos .galeria__comentarios__card_texto {
+.galeria .galeria__comentarios #splide-comentarios .splide__track .splide__list .splide__slide .splide__infos .splide__texto {
   font-family: "Merienda", cursive;
   font-size: 0.9rem;
   color: #072152;
   font-style: italic;
+}
+.galeria .galeria__comentarios #splide-comentarios .splide__track .splide__list .splide__slide .splide__infos .splide__texto span img {
+  margin-left: 5px;
+  width: 1.2rem;
 }/*# sourceMappingURL=style.css.map */

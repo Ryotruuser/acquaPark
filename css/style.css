@@ -7,6 +7,7 @@
 
 body {
   display: grid;
+  overflow-x: hidden;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 20vh 80vh 100vh;
   grid-template-areas: "header header" "aside initial" "gallery gallery";
@@ -224,6 +225,12 @@ body {
   width: 70vw;
   height: 100%;
 }
+.galeria .splide .splide__arrow svg {
+  fill: #072152;
+}
+.galeria .splide .splide__pagination__page {
+  background: #072152;
+}
 .galeria .splide .splide__track {
   height: 100%;
   border-radius: 20px;
@@ -234,6 +241,7 @@ body {
   height: 100%;
 }
 .galeria .galeria__comentarios {
+  z-index: 1;
   width: 30vw;
   height: 100%;
   border: 1px solid yellow;

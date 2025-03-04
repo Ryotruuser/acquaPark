@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acqua Park - Inicio</title>
-    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -76,14 +76,29 @@
     </section>
     
     <section class="galeria">
-        
                 
         <div class="splide" role="group" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
                   <ul class="splide__list">
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl14.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl9.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl10.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl11.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl12.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl13.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl15.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl16.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl17.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl18.png" alt="imagem do acqua park"></li>
                       <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl1.png" alt="imagem do acqua park"></li>
                       <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl2.png" alt="imagem do acqua park"></li>
                       <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl3.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl4.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl5.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl6.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl7.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl8.png" alt="imagem do acqua park"></li>
+                     
                   </ul>
             </div>
           </div>
@@ -94,7 +109,11 @@
 
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
     <script>
-        var splide = new Splide( '.splide' );
+        var splide = new Splide( '.splide',{
+            type  : 'fade',
+            rewind: true,
+            loop: true,
+        } );
         splide.mount();
     </script>
 </body>

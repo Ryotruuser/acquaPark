@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acqua Park - Inicio</title>
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -33,7 +34,7 @@
                 </li>
 
                 <li class="cabecalho__nav__list-btn">
-                    <a href="#" class="cabecalho__nav_btn-ticket">Ingresso</a>
+                    <a href="#" class="cabecalho__nav_btn-ticket">Ticket</a>
                 </li>
                 
             </ul>
@@ -73,11 +74,29 @@
         </div>
 
     </section>
-
+    
     <section class="galeria">
+        
+                
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl1.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl2.png" alt="imagem do acqua park"></li>
+                      <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl3.png" alt="imagem do acqua park"></li>
+                  </ul>
+            </div>
+          </div>
 
+        <div class="galeria__comentarios"></div>
     </section>
 
+
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <script>
+        var splide = new Splide( '.splide' );
+        splide.mount();
+    </script>
 </body>
 
 </html>

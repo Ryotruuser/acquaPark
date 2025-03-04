@@ -26,14 +26,14 @@
                 transition: .3s;
                 padding: .5rem 3rem;
                 border-radius: 16px;
-                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-branco);
-                background: variaveis.$cor-secundaria;
+                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria);
+                background: variaveis.$cor-default;
                 text-transform: uppercase;
                 font-weight: 500;
                 text-decoration: none;
                 &:hover{
                     color: variaveis.$cor-preto;
-                    background-color: variaveis.$cor-default;;
+                    background-color: variaveis.$cor-secundaria;
                 }
             }
         }

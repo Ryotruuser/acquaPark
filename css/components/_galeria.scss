@@ -2,8 +2,33 @@
 @use '../abstract/mixins';
 
 .galeria{
+    background: variaveis.$gradiente-primario;
+    background-image: url('/assets/imgs/bg/bb2.png');
+    background-image: url('/assets/imgs/bg/bb2.png'), variaveis.$gradiente-primario;
+    background-repeat: repeat-x;
+    background-position: bottom right;
     grid-area: gallery;
-    width: 100vw;
-    height: 100vh;
-    background: red;
+    border-radius: 16px;
+    padding: 2rem;
+    @include mixins.ds-fd-ai-jc(flex, row);
+    gap: 10px;
+    .splide{
+        width: 70vw;
+        height: 100%;
+        .splide__track{
+            height: 100%;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            .galeria__img{
+                height: 100%;
+            }
+        } 
+    }
+    .galeria__comentarios{
+        width: 30vw;
+        height: 100%;
+        border: 1px solid yellow;
+    }
+    
 }

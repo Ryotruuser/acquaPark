@@ -12,6 +12,9 @@
         grid-template-columns: 1fr repeat(4,auto) 1fr;
         justify-items: center;
         align-items: center;
+        .cabecalho__logo__scroll{
+            display: none;
+        }
         .cabecalho__logo{
             justify-self: flex-start;
             @include mixins.ul(none);

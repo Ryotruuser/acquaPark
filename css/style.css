@@ -36,6 +36,9 @@ body {
   justify-items: center;
   align-items: center;
 }
+.cabecalho .cabecalho__nav__list .cabecalho__logo__scroll {
+  display: none;
+}
 .cabecalho .cabecalho__nav__list .cabecalho__logo {
   justify-self: flex-start;
   -webkit-user-select: none;
@@ -211,6 +214,7 @@ body {
   background: linear-gradient(to bottom, #70e7dc, #70e7dc, #08c7db, #03bad6, #0380aa);
   background-image: url("/assets/imgs/bg/bb2.png");
   background-image: url("/assets/imgs/bg/bb2.png"), linear-gradient(to bottom, #70e7dc, #70e7dc, #08c7db, #03bad6, #0380aa);
+  background-attachment: fixed;
   background-repeat: repeat-x;
   background-position: bottom right;
   grid-area: gallery;
@@ -297,4 +301,57 @@ body {
 .galeria .galeria__comentarios #splide-comentarios .splide__track .splide__list .splide__slide .splide__infos .splide__texto span img {
   margin-left: 5px;
   width: 1.2rem;
+}
+
+.contato {
+  background: linear-gradient(to bottom, #70e7dc, #70e7dc, #08c7db, #03bad6, #0380aa);
+  background-image: url("/assets/imgs/bg/bb2.png");
+  background-image: url("/assets/imgs/bg/bb2.png"), linear-gradient(to bottom, #70e7dc, #70e7dc, #08c7db, #03bad6, #0380aa);
+  background-attachment: fixed;
+  transition: 3s;
+  padding: 3rem;
+  grid-area: contato;
+  background-repeat: repeat-x;
+  background-position: bottom right;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contato .contato__localizacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgba(255, 255, 255, 0.63);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.4px);
+  -webkit-backdrop-filter: blur(2.4px);
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  width: 50vw;
+  height: 100%;
+  padding: 0 2rem;
+}
+.contato .contato__localizacao .contato__localizacao_infos {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contato .contato__localizacao .contato__localizacao_infos .contato__localizacao_titulo {
+  font-family: "Merienda", cursive;
+  font-size: 2rem;
+  color: #072152;
+}
+.contato .contato__localizacao .contato__localizacao_infos .contato__localizacao_texto {
+  font-family: "Merienda", cursive;
+  font-size: 1.3rem;
+  color: #072152;
+}
+.contato .contato__localizacao .contato__localizacao_mapa {
+  width: 100%;
+  height: 65%;
+  border-radius: 16px;
 }/*# sourceMappingURL=style.css.map */

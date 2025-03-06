@@ -1,2 +1,39 @@
 @use '../abstract/variaveis';
 @use '../abstract/mixins';
+.contato{
+    @include mixins.bg-bi(variaveis.$gradiente-primario);
+    background-attachment: fixed;
+    transition: 3s;
+    padding: 3rem;
+    grid-area: contato;
+    background-repeat: repeat-x;
+    background-position: bottom right;
+    @include mixins.ds-fd-ai-jc(flex, row, flex-start, flex-start);
+    .contato__localizacao{
+        @include mixins.ds-fd-ai-jc(flex, column,center, flex-start);
+        background: rgba(255, 255, 255, 0.63);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.4px);
+        -webkit-backdrop-filter: blur(2.4px);
+        border: 1px solid rgba(255, 255, 255, 0.21);
+        width: 50vw;
+        height: 100%;
+        padding: 0 2rem;
+        .contato__localizacao_infos{
+            margin: 2rem 0;
+            @include mixins.ds-fd-ai-jc(flex, column);
+            .contato__localizacao_titulo{
+                @include mixins.ff-fs-cl(variaveis.$ft-terciaria, 2rem, variaveis.$cor-primaria);
+            }
+            .contato__localizacao_texto{
+                @include mixins.ff-fs-cl(variaveis.$ft-terciaria, 1.3rem, variaveis.$cor-primaria);
+            }
+        }   
+        .contato__localizacao_mapa{
+            width: 100%;
+            height: 65%;
+            border-radius: 16px;
+        }
+    }
+}

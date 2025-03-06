@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="cabecalho">
+    <header class="cabecalho" id="header">
         
         <nav class="cabecalho__nav">   
             <ul class="cabecalho__nav__list">
                 
                 <li class="cabecalho__logo">
-                    <h1 class="cabecalho__logo_titulo">Acqua Park</h1>
+                    <a class="cabecalho__logo_titulo">Acqua Park</a>
                 </li>
 
                 <li class="cabecalho__nav__list-item">
@@ -26,11 +26,11 @@
                 </li>
 
                 <li class="cabecalho__nav__list-item">
-                    <a href="#" class="cabecalho__nav__list-link">Alugue</a>
+                    <a href="#contato" class="cabecalho__nav__list-link">Alugue</a>
                 </li>
 
                 <li class="cabecalho__nav__list-item">
-                    <a href="#" class="cabecalho__nav__list-link">Nosso espaco</a>
+                    <a href="#contato" class="cabecalho__nav__list-link">Nosso espaco</a>
                 </li>
 
                 <li class="cabecalho__nav__list-btn">
@@ -163,8 +163,15 @@
         </div>
     </section>
 
-    <section class="contato">
-        <section class="contato__localizacao"></section>
+    <section class="contato" id="contato">
+        <section class="contato__localizacao">
+            <div class="contato__localizacao_infos">
+                <h2 class="contato__localizacao_titulo">Descubra Nosso Paraíso Aquático!</h2>
+                <p class="contato__localizacao_texto">Visualize o mapa e planeje seu dia de diversão e lazer no nosso espaço repleto de atrações e conforto</p>
+            </div>
+            <iframe class="contato__localizacao_mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d128131.69446551178!2d-39.75220248114525!3d-18.691732525126408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xca136e530ae831%3A0xfbe9edcc4ce4bd07!2sGuriri%20Beach%20Acqua%20Park!5e0!3m2!1spt-BR!2sbr!4v1741225580161!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
         <section class="contato__infos"></section>
     </section>
 
@@ -197,6 +204,7 @@
         splideComentarios.mount();
 
     </script>
+
 </body>
 
 </html>

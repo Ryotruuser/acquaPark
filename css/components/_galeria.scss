@@ -3,6 +3,7 @@
 
 .galeria{
     @include mixins.bg-bi();
+    background-attachment: fixed;
     background-repeat: repeat-x;
     background-position: bottom right;
     grid-area: gallery;

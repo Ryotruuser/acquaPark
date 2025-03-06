@@ -10,8 +10,8 @@ body {
   display: grid;
   overflow-x: hidden;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 20vh 80vh 100vh;
-  grid-template-areas: "header header" "aside initial" "gallery gallery";
+  grid-template-rows: 20vh 80vh 100vh 100vh;
+  grid-template-areas: "header header" "aside initial" "gallery gallery" "contato contato";
   margin: 0;
   padding: 0;
   box-sizing: border-box;

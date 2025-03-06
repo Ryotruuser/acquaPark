@@ -2,9 +2,7 @@
 @use '../abstract/mixins';
 
 .galeria{
-    background: variaveis.$gradiente-primario;
-    background-image: url('/assets/imgs/bg/bb2.png');
-    background-image: url('/assets/imgs/bg/bb2.png'), variaveis.$gradiente-primario;
+    @include mixins.bg-bi();
     background-repeat: repeat-x;
     background-position: bottom right;
     grid-area: gallery;

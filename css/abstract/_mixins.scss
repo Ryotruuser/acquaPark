@@ -1,3 +1,4 @@
+@use '../abstract/variaveis';
 @mixin margem-central($width){
     margin: 0 auto;
     width: $width;
@@ -21,3 +22,10 @@
     -ms-user-select: none; 
     user-select: none; 
 }
+
+@mixin bg-bi($bg-gradient:variaveis.$gradiente-primario, $bg-img:url('/assets/imgs/bg/bb2.png')){
+    background: $bg-gradient;
+    background-image:$bg-img;
+    background-image: $bg-img, $bg-gradient;
+}
+

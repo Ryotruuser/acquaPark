@@ -309,7 +309,7 @@ body {
   background-image: url("/assets/imgs/bg/bb2.png"), linear-gradient(to bottom, #70e7dc, #70e7dc, #08c7db, #03bad6, #0380aa);
   background-attachment: fixed;
   transition: 3s;
-  padding: 3rem;
+  padding: 2rem 0.5rem;
   grid-area: contato;
   background-repeat: repeat-x;
   background-position: bottom right;
@@ -317,15 +317,14 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 10px;
 }
 .contato .contato__localizacao {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background: rgba(255, 255, 255, 0.63);
-  border-radius: 16px;
+  background: rgba(0, 47, 78, 0.73);
+  border-radius: 16px 0 0 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.4px);
   -webkit-backdrop-filter: blur(2.4px);
@@ -343,12 +342,12 @@ body {
 .contato .contato__localizacao .contato__localizacao_infos .contato__localizacao_titulo {
   font-family: "Merienda", cursive;
   font-size: 2rem;
-  color: #072152;
+  color: #fff;
 }
 .contato .contato__localizacao .contato__localizacao_infos .contato__localizacao_texto {
   font-family: "Merienda", cursive;
   font-size: 1.3rem;
-  color: #072152;
+  color: #fff;
 }
 .contato .contato__localizacao .contato__localizacao_mapa {
   width: 100%;
@@ -356,12 +355,12 @@ body {
   border-radius: 16px;
 }
 .contato .contato__infos {
-  background: rgba(255, 255, 255, 0.63);
-  border-radius: 16px;
+  background: rgba(0, 47, 78, 0.73);
+  border-radius: 0 16px 16px 0;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.4px);
   -webkit-backdrop-filter: blur(2.4px);
-  border: 1px solid rgba(255, 255, 255, 0.21);
+  border: 1px solid rgba(255, 255, 255, 0.11);
   width: 50vw;
   height: 100%;
   padding: 0 2rem;
@@ -379,12 +378,12 @@ body {
 .contato .contato__infos .contato__infos_textos .contato__localizacao_titulo {
   font-family: "Merienda", cursive;
   font-size: 2rem;
-  color: #072152;
+  color: #fff;
 }
 .contato .contato__infos .contato__infos_textos .contato__localizacao_texto {
   font-family: "Merienda", cursive;
   font-size: 1.3rem;
-  color: #072152;
+  color: #fff;
 }
 .contato .contato__infos .contato__infos_img {
   width: 80%;
@@ -395,7 +394,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   margin-top: 2rem;
   margin-left: 10%;
 }
@@ -416,7 +415,7 @@ body {
 .contato .contato__infos .contato__infos_canais .contato__infos_canais_canal .contato__infos_canais_canal_num, .contato .contato__infos .contato__infos_canais .contato__infos_canais_canal .contato__infos_canais_canal_mail {
   font-family: "Merienda", cursive;
   font-size: 1.5rem;
-  color: #072152;
+  color: #fff;
   transition: 0.5s;
   cursor: pointer;
 }

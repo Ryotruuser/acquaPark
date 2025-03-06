@@ -57,9 +57,33 @@
             }
         }
         .contato__infos_img{
-            width: 100%;
-            margin-top: 4rem;
+            width: 80%;
             margin-left: 20%;
+        }
+        .contato__infos_canais{
+            @include mixins.ds-fd-ai-jc(flex, column, flex-start);
+            gap: 10px;
+            margin-top: 2rem;
+            margin-left: 10% ;
+            .contato__infos_canais_canal{
+                @include mixins.ds-fd-ai-jc(flex, row);
+                gap: 20px;
+                .contato__infos_canais_canal_img{
+                    cursor: pointer;
+                    width: 3rem;
+                }
+                .wpp{
+                    transform: rotateY(180deg);
+                }
+                .contato__infos_canais_canal_num, .contato__infos_canais_canal_mail{
+                    @include mixins.ff-fs-cl(variaveis.$ft-terciaria, 1.5rem, variaveis.$cor-primaria);
+                    transition: .5s;
+                    cursor: pointer;
+                    &:hover{
+                        color: #08c7db;
+                    }
+                }
+            }
         }
     }
 }

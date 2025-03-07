@@ -1,10 +1,6 @@
 @use '../abstract/variaveis';
 @use '../abstract/mixins';
 
-.fundo{
-    @include mixins.bg-bi(variaveis.$gradiente-terciario !important);
-}
-
 .contato{
     @include mixins.bg-bi(variaveis.$gradiente-primario);
     background-attachment: fixed;

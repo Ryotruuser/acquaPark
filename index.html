@@ -33,6 +33,7 @@
                     <a href="#contato" class="cabecalho__nav__list-link">Nosso espaco</a>
                 </li>
 
+
                 <li class="cabecalho__nav__list-btn">
                     <a href="#" class="cabecalho__nav_btn-ticket">Ticket</a>
                 </li>
@@ -209,6 +210,79 @@
         </section>
     </section>
 
+    <footer class="rodape">
+        <!-- <a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Instagram logo icons created by Pixel perfect - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Ruslan Babkin - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Ruslan Babkin - Flaticon</a> 
+        -->
+        <div class="rodape__container">
+            <ul class="rodape__container_list">
+                <h4 class="rodape__container__titulo">Links Uteis</h4>
+                <li class="rodape__container_list_item">
+                    <a href="" class="rodape__container_list_link">Sobre o Parque</a>
+                </li>
+                <li class="rodape__container_list_item">
+                    <a href="" class="rodape__container_list_link">Atrações</a>
+                </li>
+                <li class="rodape__container_list_item">
+                    <a href="" class="rodape__container_list_link">Preços e Ingressos</a>
+                </li>
+                <li class="rodape__container_list_item">
+                    <a href="" class="rodape__container_list_link">Políticas de Segurança</a>
+                </li>
+                <li class="rodape__container_list_item">
+                    <a href="" class="rodape__container_list_link">Termos e Condições</a>
+                </li>
+            </ul>
+
+            <ul class="rodape__container_list">
+                <h4 class="rodape__container__titulo">Informações Legais</h4>
+                <li class="rodape__container_list_item">
+                    <a href="" class="rodape__container_list_link">Direitos autorais</a>
+                </li>
+                <li class="rodape__container_list_item">
+                    <a href="" class="rodape__container_list_link">Política de privacidade</a>
+                </li>
+                <li class="rodape__container_list_item">
+                    <a href="" class="rodape__container_list_link">Segurança das atrações</a>
+                </li>
+                <li class="rodape__container_list_item">
+                    <a href="" class="rodape__container_list_link">Certificado de segurança</a>
+                </li>
+                <li class="rodape__container_list_item">
+                    <a href="" class="rodape__container_list_link">Gerenciar cookies</a>
+                </li>
+            </ul>
+
+            <ul class="rodape__container_list rodape__container__list_social">
+                <h4 class="rodape__container__titulo">Siga nossas redes !</h4>
+                
+                <li class="rodape__container_list_item">
+                    <a href="" class="rodape__container_list_link">
+                        <img class="link__img" src="/assets/imgs/icons/social/instagram.png" alt="icone do instagram">
+                    </a>
+                </li>
+                <li class="rodape__container_list_item">
+                    <a href="" class="rodape__container_list_link">
+                        <img class="link__img" src="/assets/imgs/icons/social/facebook.png" alt="icone do facebook">
+                    </a>
+                </li>
+                <li class="rodape__container_list_item">
+                    <a href="" class="rodape__container_list_link">
+                        <img class="link__img" src="/assets/imgs/icons/social/youtube.png" alt="icone do youtube">
+                    </a>
+                </li>
+                <li class="rodape__container_list_item">
+                    <a href="" class="rodape__container_list_link">
+                        <img class="link__img" src="/assets/imgs/icons/social/tiktok.png" alt="icone do tik tok">
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+    </footer>
+
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.js"></script>
     <script>
@@ -239,18 +313,6 @@
 
     </script>
 
-    <script>
-        window.addEventListener('scroll', () => {
-            const contato = document.getElementById('contato');
-            console.log(window.pageYOffset);
-            if (window.pageYOffset >= 1622){
-                contato.classList.add("fundo");
-            }else if(window.pageYOffset <= 1622){
-                contato.classList.remove("fundo");
-            }
-        });
-        
-    </script>
 </body>
 
 </html>

@@ -10,8 +10,8 @@ body {
   display: grid;
   overflow-x: hidden;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 20vh 80vh 100vh 100vh;
-  grid-template-areas: "header header" "aside initial" "gallery gallery" "contato contato";
+  grid-template-rows: 20vh 80vh 100vh 100vh auto;
+  grid-template-areas: "header header" "aside initial" "gallery gallery" "contato contato" "footer footer";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -303,12 +303,6 @@ body {
   width: 1.2rem;
 }
 
-.fundo {
-  background: linear-gradient(to bottom, #70e7dc, #70e7dc, #08c7db, #002F4E, #002F4E) !important;
-  background-image: url("/assets/imgs/bg/bb2.png");
-  background-image: url("/assets/imgs/bg/bb2.png"), linear-gradient(to bottom, #70e7dc, #70e7dc, #08c7db, #002F4E, #002F4E) !important;
-}
-
 .contato {
   background: linear-gradient(to bottom, #70e7dc, #70e7dc, #08c7db, #03bad6, #0380aa);
   background-image: url("/assets/imgs/bg/bb2.png");
@@ -427,4 +421,60 @@ body {
 }
 .contato .contato__infos .contato__infos_canais .contato__infos_canais_canal .contato__infos_canais_canal_num:hover, .contato .contato__infos .contato__infos_canais .contato__infos_canais_canal .contato__infos_canais_canal_mail:hover {
   color: #08c7db;
+}
+
+.rodape {
+  grid-area: footer;
+  background-attachment: fixed;
+  background: linear-gradient(to bottom, #002F4E, #00203D, #001D36, #001728, #000F1C);
+  background-image: url("/assets/imgs/bg/bb2.png");
+  background-image: url("/assets/imgs/bg/bb2.png"), linear-gradient(to bottom, #002F4E, #00203D, #001D36, #001728, #000F1C);
+  background-position: bottom;
+}
+.rodape .rodape__container {
+  background: rgba(0, 47, 78, 0.73);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.4px);
+  -webkit-backdrop-filter: blur(2.4px);
+  padding: 0 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.rodape .rodape__container .rodape__container_list {
+  list-style-type: none;
+  line-height: 2rem;
+}
+.rodape .rodape__container .rodape__container_list .rodape__container__titulo {
+  font-family: "Merienda", cursive;
+  font-size: 2rem;
+  color: #fff;
+}
+.rodape .rodape__container .rodape__container_list .rodape__container_list_item .rodape__container_list_link {
+  text-decoration: none;
+  transition: 0.5s;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.rodape .rodape__container .rodape__container_list .rodape__container_list_item .rodape__container_list_link:hover {
+  color: #08c7db;
+}
+.rodape .rodape__container .rodape__container__list_social {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.rodape .rodape__container .rodape__container__list_social .rodape__container__titulo {
+  font-family: "Merienda", cursive;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.rodape .rodape__container .rodape__container__list_social .rodape__container_list_item .rodape__container_list_link .link__img {
+  width: 30px;
 }/*# sourceMappingURL=style.css.map */

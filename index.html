@@ -239,6 +239,18 @@
 
     </script>
 
+    <script>
+        window.addEventListener('scroll', () => {
+            const contato = document.getElementById('contato');
+            console.log(window.pageYOffset);
+            if (window.pageYOffset >= 1622){
+                contato.classList.add("fundo");
+            }else if(window.pageYOffset <= 1622){
+                contato.classList.remove("fundo");
+            }
+        });
+        
+    </script>
 </body>
 
 </html>

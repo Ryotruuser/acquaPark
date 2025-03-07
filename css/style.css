@@ -303,6 +303,12 @@ body {
   width: 1.2rem;
 }
 
+.fundo {
+  background: linear-gradient(to bottom, #70e7dc, #70e7dc, #08c7db, #002F4E, #002F4E) !important;
+  background-image: url("/assets/imgs/bg/bb2.png");
+  background-image: url("/assets/imgs/bg/bb2.png"), linear-gradient(to bottom, #70e7dc, #70e7dc, #08c7db, #002F4E, #002F4E) !important;
+}
+
 .contato {
   background: linear-gradient(to bottom, #70e7dc, #70e7dc, #08c7db, #03bad6, #0380aa);
   background-image: url("/assets/imgs/bg/bb2.png");

@@ -287,6 +287,22 @@ body {
   width: 70vw;
   height: 100%;
 }
+.galeria .splide #galeria__expandir_on {
+  display: none;
+}
+.galeria .splide .galeria__splide__expandir_link {
+  position: absolute;
+  z-index: 1;
+  left: 5px;
+  top: 5px;
+}
+.galeria .splide .galeria__splide__expandir_link .galeria__splide__expandir_img {
+  transition: 0.5s;
+  width: 4rem;
+}
+.galeria .splide .galeria__splide__expandir_link .galeria__splide__expandir_img:hover {
+  width: 5rem;
+}
 .galeria .splide .splide__arrow svg {
   fill: #072152;
 }
@@ -358,6 +374,10 @@ body {
 .galeria .galeria__comentarios #splide-comentarios .splide__track .splide__list .splide__slide .splide__infos .splide__texto span img {
   margin-left: 5px;
   width: 1.2rem;
+}
+
+.galeria__expandir_foto {
+  width: 100% !important;
 }
 
 .contato {

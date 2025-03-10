@@ -88,7 +88,10 @@
     
     <section class="galeria" id="galeria">
                 
-        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example" id="galeria__fotos">
+            <a href="#!" class="galeria__splide__expandir_link" onclick="comentariosOff()" id="galeria__expandir_off">
+                <img src="./assets/imgs/icons/expandir.png" alt="icone do olho aberto" class="galeria__splide__expandir_img">
+            </a>
             <div class="splide__track">
                   <ul class="splide__list">
                       <li class="splide__slide"><img class="galeria__img" src="./assets/imgs/galeria/gl14.png" alt="imagem do acqua park"></li>
@@ -112,9 +115,9 @@
                      
                   </ul>
             </div>
-          </div>
+        </div>
 
-        <div class="galeria__comentarios">
+        <div class="galeria__comentarios" id="galeria__comentarios">
             <div class="splide" role="group" aria-label="Splide Basic HTML Example" id="splide-comentarios">
                 <div class="splide__track" >
                       <ul class="splide__list">
@@ -293,7 +296,8 @@
         </div>
     </footer>
 
-    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.js"></script>
     <script>
         var splide = new Splide( '.splide',{

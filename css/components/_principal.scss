@@ -1,5 +1,7 @@
 @use '../abstract/variaveis';
 @use '../abstract/mixins';
+@use '../components/scrollArrow';
+
 
 .principal{
     @include mixins.ds-fd-ai-jc(flex, column, flex-start, flex-end);
@@ -17,6 +19,7 @@
         gap: 2rem;
         padding: 1rem 3rem;
         transition: .8s;
+        margin-bottom: 10%;
         &:hover{
             background: rgba(255, 255, 255, 0.76);
             backdrop-filter: blur(3px);

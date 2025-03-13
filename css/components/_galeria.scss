@@ -11,9 +11,16 @@
     padding: 2rem 0.5rem;
     @include mixins.ds-fd-ai-jc(flex, row);
     gap: 10px;
+    @media screen and (max-width: 990px){
+        flex-direction: column;
+    }
     .splide{
-        width: 70vw;
+        width: 65vw;
         height: 100%;
+        @media screen and (max-width: 990px){
+            height: 60%;
+            width: 100%;
+        }
         #galeria__expandir_on{
             display: none;
         }
@@ -25,6 +32,23 @@
             .galeria__splide__expandir_img{
                 transition: .5s;
                 width: 4rem;
+                &:hover{
+                    width: 5rem;
+                }
+            }
+        }
+        .galeria__splide__comentario_link{
+            display: none;
+            position: absolute;
+            z-index: 1;
+            right: 5px;
+            top:5px;
+            @media screen and (max-width: 990px){
+                display: block;
+            }
+            .galeria__splide__comentario_img{
+                width: 4rem;
+                transition: .5s;
                 &:hover{
                     width: 5rem;
                 }
@@ -43,6 +67,14 @@
             border: none;
             .galeria__img{
                 height: 100%;
+                @media screen and (max-width: 1280px){
+                    object-fit: cover;
+                    object-position: center center;
+                }
+                @media screen and (max-width: 990px){
+                    width: 100%;
+                }
+                
             }
         } 
     }
@@ -54,14 +86,23 @@
         -webkit-backdrop-filter: blur(2.4px);
         border: 1px solid rgba(255, 255, 255, 0.21);
         z-index: 1;
-        width: 30vw;
+        width: 35%;
         height: 100%;
         overflow-y: hidden;
         overflow-x: hidden;
         padding: 0 .5rem;
         cursor: pointer;
         @include mixins.ds-fd-ai-jc(flex, column,flex-start, flex-start);
+        @media screen and (max-width: 990px){
+            width: 100%;
+            padding: 0;
+            height: 40%;
+            flex-wrap: wrap;
+        }
         #splide-comentarios{
+            @media screen and (max-width: 990px){
+                height: 100%;
+            }
             .splide__arrow, .splide__pagination{
                 opacity: 0;
             }
@@ -69,8 +110,8 @@
                 .splide__list{
                     .splide__slide {
                         @include mixins.ds-fd-ai-jc(flex, row);
-                        height: 20% !important;
-                        padding: 0 .5rem;
+                        // height: 20% !important;
+                        padding: 1rem;
                         gap: 10px;
                         background: rgba(112, 231, 220, 0.09);
                         border-radius: 16px;
@@ -78,15 +119,24 @@
                         backdrop-filter: blur(1.6px);
                         -webkit-backdrop-filter: blur(1.6px);
                         border: 1px solid rgba(112, 231, 220, 0.15);
+                        @media screen and (max-width: 990px){
+                            justify-content: flex-start;
+                        }
                         .splide__img {
-                            width: 120px;
+                            width: 7rem;
                             border-radius: 360px;
+                            @media screen and (max-width: 1280px){
+                                width: 5rem;
+                            }
                         }
                         .splide__infos{
                             // @include mixins.ds-fd-ai-jc(flex, column);
                             .splide__titulo{
-                                @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.4rem, variaveis.$cor-primaria);
+                                @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.2rem, variaveis.$cor-primaria);
                                 font-weight: 400;
+                                @media screen and (max-width: 1280px){
+                                    font-size: 1rem;
+                                }
                             }
                             .splide__texto{
                                 @include mixins.ff-fs-cl(variaveis.$ft-terciaria, .9rem, variaveis.$cor-primaria);
@@ -96,6 +146,9 @@
                                         margin-left: 5px;
                                         width: 1.2rem;
                                     }
+                                }
+                                @media screen and (max-width: 1420px){
+                                    font-size: .8rem;
                                 }
                             }
                         }
@@ -109,4 +162,3 @@
 .galeria__expandir_foto{
     width: 100% !important;
 }
-

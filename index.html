@@ -30,7 +30,7 @@
                 </li>
 
                 <li class="cabecalho__nav__list-item">
-                    <a href="#contato" class="cabecalho__nav__list-link">Nosso espaco</a>
+                    <a href="#contato" class="cabecalho__nav__list-link">Espaço</a>
                 </li>
 
                 <li class="cabecalho__nav__list-item">
@@ -89,7 +89,7 @@
     <section class="galeria" id="galeria">
                 
         <div class="splide" role="group" aria-label="Splide Basic HTML Example" id="galeria__fotos">
-            <a href="#!" class="galeria__splide__expandir_link" onclick="comentariosOff()" id="galeria__expandir_off">
+            <a href="#!" class="galeria__splide__expandir_link" onclick="expandir()" id="galeria__expandir_off">
                 <img src="./assets/imgs/icons/expandir.png" alt="icone de expandir" class="galeria__splide__expandir_img">
             </a>
             <div class="splide__track">
@@ -141,7 +141,7 @@
                             <img class="splide__img" src="assets/imgs/clientes/cl3.png" alt="Foto do cliente">
                             <div class="splide__infos">
                                 <h2 class="splide__titulo">Carla e Rafael Souza, com o filho Lucas</h2>
-                                <p class="splide__texto">“Nos divertimos bastante, mas ficamos tristes por não poder levar nosso cãozinho. Seria perfeito se o parque fosse pet-friendly! <span><img src="/assets/imgs/clientes/dog.svg" alt=""></span>”</p>
+                                <p class="splide__texto">“Nos divertimos bastante, ficamos tristes por pelo parque nao ser pet-friendly! <span><img src="/assets/imgs/clientes/dog.svg" alt=""></span>”</p>
                             </div>
                         </li>
 
@@ -149,7 +149,7 @@
                             <img class="splide__img" src="assets/imgs/clientes/cl4.png" alt="Foto do cliente">
                             <div class="splide__infos">
                                 <h2 class="splide__titulo">Marcelo Teixeira, com o filho Gabriel</h2>
-                                <p class="splide__texto">“Foi um dia incrível com meu filho! As atrações são seguras e muito divertidas. Já estamos planejando nossa próxima visita!”</p>
+                                <p class="splide__texto">“Foi um dia incrível com meu filho! As atrações são seguras e muito divertidas.”</p>
                             </div>
                         </li>
 
@@ -157,7 +157,7 @@
                             <img class="splide__img" src="assets/imgs/clientes/cl5.png" alt="Foto do cliente">
                             <div class="splide__infos">
                                 <h2 class="splide__titulo">Amanda Torres</h2>
-                                <p class="splide__texto">“Minhas meninas se divertiram demais! O parque tem opções para todas as idades e nos sentimos super seguras e acolhidas. Voltaremos com certeza!”</p>
+                                <p class="splide__texto">“Minhas meninas se divertiram demais! nos sentimos super seguras e acolhidas. Voltaremos com certeza!”</p>
                             </div>
                         </li>
 
@@ -165,7 +165,7 @@
                             <img class="splide__img" src="assets/imgs/clientes/cl6.png" alt="Foto do cliente">
                             <div class="splide__infos">
                                 <h2 class="splide__titulo">Tenzin Wangchuk</h2>
-                                <p class="splide__texto">“Aproveitei um dia de folga e foi uma experiência relaxante e revigorante. Ambiente limpo, bem organizado e cheio de boas energias!”</p>
+                                <p class="splide__texto">“Aproveitei o dia de folga experiência relaxante e revigorante. Ambiente limpo, bem organizado!”</p>
                             </div>
                         </li>
 
@@ -316,6 +316,9 @@
             pagination: false, 
             arrows: false,
             perPage: 5,
+            breakpoints: {
+                990: { perPage: 3 },
+            },
             gap: '20px',
             height: '100%',
             width: '100%',

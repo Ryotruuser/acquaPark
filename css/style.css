@@ -25,50 +25,39 @@ body {
 
 .cabecalho {
   grid-area: header;
-  align-self: center;
-}
-.cabecalho .cabecalho__nav__list {
-  list-style-type: none;
-  padding: 0 2rem;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: 1fr repeat(5, auto) 1fr;
-  justify-items: center;
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  gap: 10px;
 }
-.cabecalho .cabecalho__nav__list .cabecalho__logo__scroll {
-  display: none;
+@media screen and (max-width: 1100px) {
+  .cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
-.cabecalho .cabecalho__nav__list .cabecalho__logo {
-  justify-self: flex-start;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-       user-select: none;
-}
-.cabecalho .cabecalho__nav__list .cabecalho__logo .cabecalho__logo_titulo {
+.cabecalho .cabecalho__logo_titulo {
   cursor: pointer;
   font-family: "Lobster", sans-serif;
   font-size: 3rem;
   color: #072152;
 }
-.cabecalho .cabecalho__nav__list .cabecalho__nav__list-btn {
-  justify-self: flex-end;
+@media screen and (max-width: 1100px) {
+  .cabecalho .cabecalho__logo_titulo {
+    font-size: 2.7rem;
+  }
 }
-.cabecalho .cabecalho__nav__list .cabecalho__nav__list-btn .cabecalho__nav_btn-ticket {
-  transition: 0.3s;
-  padding: 0.5rem 3rem;
-  border-radius: 16px;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
-  color: #072152;
-  background: #f9a553;
-  text-transform: uppercase;
-  font-weight: 500;
-  text-decoration: none;
-}
-.cabecalho .cabecalho__nav__list .cabecalho__nav__list-btn .cabecalho__nav_btn-ticket:hover {
-  color: #000;
-  background-color: #18b0b0;
+.cabecalho .cabecalho__nav__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 .cabecalho .cabecalho__nav__list .cabecalho__nav__list-item .cabecalho__nav__list-link {
   text-decoration: none;
@@ -81,6 +70,36 @@ body {
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #0380aa;
   font-weight: 600;
+}
+@media screen and (max-width: 1100px) {
+  .cabecalho .cabecalho__nav__list .cabecalho__nav__list-item .cabecalho__nav__list-link {
+    font-size: 1rem;
+  }
+  .cabecalho .cabecalho__nav__list .cabecalho__nav__list-item .cabecalho__nav__list-link:hover {
+    font-weight: 500;
+  }
+}
+.cabecalho .cabecalho__btn-ticket {
+  transition: 0.3s;
+  padding: 0.5rem 3rem;
+  border-radius: 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #072152;
+  background: #f9a553;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+}
+.cabecalho .cabecalho__btn-ticket:hover {
+  color: #000;
+  background-color: #18b0b0;
+}
+@media screen and (max-width: 1100px) {
+  .cabecalho .cabecalho__btn-ticket {
+    font-size: 1rem;
+    padding: 0.2rem 2rem;
+  }
 }
 
 .mlateral {

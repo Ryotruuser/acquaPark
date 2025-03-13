@@ -3,43 +3,23 @@
 
 .cabecalho{
     grid-area: header;
-    align-self: center;
+    @include mixins.ds-fd-ai-jc(flex, row, center, space-between);
+    padding: 0.5rem;
+    gap: 10px;
+    @media screen and (max-width: 1100px){
+        @include mixins.ds-fd-ai-jc(flex, column);
+    }
+    .cabecalho__logo_titulo{
+        cursor: pointer;
+        @include mixins.ff-fs-cl(variaveis.$ft-titulos, 3rem, variaveis.$cor-primaria);
+        @media screen and (max-width: 1100px){
+            font-size: 2.7rem;
+        }
+    }
     .cabecalho__nav__list{
         list-style-type: none;
-        padding: 0 2rem;
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: 1fr repeat(5,auto) 1fr;
-        justify-items: center;
-        align-items: center;
-        .cabecalho__logo__scroll{
-            display: none;
-        }
-        .cabecalho__logo{
-            justify-self: flex-start;
-            @include mixins.ul(none);
-            .cabecalho__logo_titulo{
-                cursor: pointer;
-                @include mixins.ff-fs-cl(variaveis.$ft-titulos, 3rem, variaveis.$cor-primaria);
-            }
-        }
-        .cabecalho__nav__list-btn{
-            justify-self: flex-end;
-            .cabecalho__nav_btn-ticket{
-                transition: .3s;
-                padding: .5rem 3rem;
-                border-radius: 16px;
-                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria);
-                background: variaveis.$cor-default;
-                text-transform: uppercase;
-                font-weight: 500;
-                text-decoration: none;
-                &:hover{
-                    color: variaveis.$cor-preto;
-                    background-color: variaveis.$cor-secundaria;
-                }
-            }
-        }
+        @include mixins.ds-fd-ai-jc(flex, row);
+        gap: 1rem;
         .cabecalho__nav__list-item{
             .cabecalho__nav__list-link{
                 text-decoration: none;
@@ -50,7 +30,32 @@
                     border-bottom: 2px solid variaveis.$cor-terciaria;
                     font-weight: 600;
                 }
+                @media screen and (max-width: 1100px){
+                    font-size: 1rem;
+                    &:hover{
+                        font-weight: 500;
+                    }
+                }
             }
         } 
    }
+   .cabecalho__btn-ticket{
+        transition: .3s;
+        padding: .5rem 3rem;
+        border-radius: 16px;
+        @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria);
+        background: variaveis.$cor-default;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-decoration: none;
+        &:hover{
+            color: variaveis.$cor-preto;
+            background-color: variaveis.$cor-secundaria;
+        }
+        @media screen and (max-width: 1100px){
+            font-size: 1rem;
+            padding: .2rem 2rem;
+        }
+            
+    }
 }

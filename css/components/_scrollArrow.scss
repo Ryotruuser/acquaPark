@@ -19,6 +19,9 @@ $arrow-line-width: 4px;
   top: 95%;
   left: 50%;
   @include arrow-transitions(0deg);
+  @media screen and (max-width: 460px){
+    display: none;
+  }
   &:hover {
     cursor: pointer;
     .arrow {
@@ -60,3 +63,4 @@ $arrow-line-width: 4px;
     }
   }
 }
+

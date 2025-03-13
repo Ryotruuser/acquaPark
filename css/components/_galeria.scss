@@ -14,6 +14,11 @@
     @media screen and (max-width: 990px){
         flex-direction: column;
     }
+    #galeria__fotos{
+        @media screen and (max-width: 990px){
+            width: 100%;
+        }
+    }
     .splide{
         width: 65vw;
         height: 100%;
@@ -159,6 +164,10 @@
     }
 }
 
-.galeria__expandir_foto{
+.galeria__expandir_foto_largura{
     width: 100% !important;
+}
+
+.galeria__expandir_foto_altura{
+    height: 100% !important;
 }

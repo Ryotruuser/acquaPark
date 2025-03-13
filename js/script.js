@@ -6,28 +6,52 @@ const expandirComentariosOff = document.getElementById("galeria__expandir_off");
 const expandirComentariosOn = document.getElementById("galeria__expandir_om");
 
 expandir = () => {
-    
-    if(galeriaFotos[0].classList.length == 1){
-        sectionComentarios.style.display = "none";
-        sectionFotos.style.width = "100%"
-        for (let i = 0; i <= 18; i++) {
-            galeriaFotos[i].classList.add("galeria__expandir_foto");
+    if(window.innerWidth >= 991){
+        if(galeriaFotos[0].classList.length == 1){
+            sectionComentarios.style.display = "none";
+            sectionFotos.style.width = "100%"
+            for (let i = 0; i <= 18; i++) {
+                galeriaFotos[i].classList.add("galeria__expandir_foto_largura");
+            }
+        }else{
+            sectionFotos.style.width = "65vw";
+            sectionComentarios.style.display = "flex";
+            for (let i = 0; i <= 18; i++) {
+                galeriaFotos[i].classList.remove("galeria__expandir_foto_largura");
+            }
         }
-    }else{
-        sectionFotos.style.width = "65vw";
-        sectionComentarios.style.display = "flex";
-        galeriaFotos[0].classList.remove("galeria__expandir_foto");
+    }else if(window.innerWidth <= 990){
+        if(galeriaFotos[0].classList.length == 1){
+            sectionComentarios.style.display = "none";
+            sectionFotos.style.height = "100%";
+            for (let i = 0; i <= 18; i++) {
+                galeriaFotos[i].classList.add("galeria__expandir_foto_altura");
+            }
+        }else{
+            sectionFotos.style.width = "100%";
+            sectionFotos.style.height = "60%";
+            sectionComentarios.style.display = "flex";
+            for (let i = 0; i <= 18; i++) {
+                galeriaFotos[i].classList.remove("galeria__expandir_foto_altura");
+            }
+        }
     }
+
    
 }
 
-// ativarComentario = () => {
-//     if(sectionComentarios.style.display == "none"){
-//         sectionFotos.style.width = "50%"
-//         sectionComentarios.style.display = "block";
-//     }else{
-//         sectionFotos.style.width = "100%"
-//         sectionComentarios.style.display = "none";
-//     }
+window.addEventListener("resize", () => {
+    if(window.innerWidth <= 990){
+        sectionFotos.style.width = "100%";
+        for (let i = 0; i <= 18; i++) {
+            galeriaFotos[i].classList.remove("galeria__expandir_foto_largura");
+        }
 
-// }
+    }else if(window.innerWidth >= 991){
+        sectionFotos.style.width = "65vw";
+        sectionComentarios.style.display = "flex";
+        for (let i = 0; i <= 18; i++) {
+            galeriaFotos[i].classList.remove("galeria__expandir_foto_altura");
+        }
+    }
+});

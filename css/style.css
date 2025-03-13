@@ -288,6 +288,11 @@ body {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 990px) {
+  .galeria #galeria__fotos {
+    width: 100%;
+  }
+}
 .galeria .splide {
   width: 65vw;
   height: 100%;
@@ -451,8 +456,12 @@ body {
   }
 }
 
-.galeria__expandir_foto {
+.galeria__expandir_foto_largura {
   width: 100% !important;
+}
+
+.galeria__expandir_foto_altura {
+  height: 100% !important;
 }
 
 .contato {

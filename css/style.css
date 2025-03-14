@@ -375,7 +375,6 @@ body {
   background-repeat: repeat-x;
   background-position: bottom right;
   grid-area: gallery;
-  border-radius: 16px;
   padding: 2rem 0.5rem;
   display: flex;
   flex-direction: row;

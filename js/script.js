@@ -43,12 +43,14 @@ expandir = () => {
 window.addEventListener("resize", () => {
     if(window.innerWidth <= 990){
         sectionFotos.style.width = "100%";
+        sectionFotos.style.height = "60%";
         for (let i = 0; i <= 18; i++) {
             galeriaFotos[i].classList.remove("galeria__expandir_foto_largura");
         }
 
     }else if(window.innerWidth >= 991){
         sectionFotos.style.width = "65vw";
+        sectionFotos.style.height = "100%";
         sectionComentarios.style.display = "flex";
         for (let i = 0; i <= 18; i++) {
             galeriaFotos[i].classList.remove("galeria__expandir_foto_altura");

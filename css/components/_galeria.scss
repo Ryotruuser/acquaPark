@@ -7,7 +7,6 @@
     background-repeat: repeat-x;
     background-position: bottom right;
     grid-area: gallery;
-    border-radius: 16px;
     padding: 2rem 0.5rem;
     @include mixins.ds-fd-ai-jc(flex, row);
     gap: 10px;

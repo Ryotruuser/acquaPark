@@ -672,6 +672,11 @@ body {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 406px) {
+  .contato .contato__elementos .contato__elementos_infos .contato__elementos_infos_titulo {
+    font-size: 0.9rem;
+  }
+}
 .contato .contato__elementos .contato__elementos_infos .contato__elementos_list {
   list-style-type: none;
   display: flex;

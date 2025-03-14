@@ -820,6 +820,8 @@ body {
   padding-left: 2.5rem;
 }
 .rodape .rodape__container .rodape__container__list_social .social__titulo .rodape__container__titulo {
+  padding: 0;
+  margin: 0;
   font-family: "Merienda", cursive;
   font-size: 2rem;
   color: #fff;

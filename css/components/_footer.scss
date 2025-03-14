@@ -62,6 +62,8 @@
             padding-left:2.5rem;
             .social__titulo{
                 .rodape__container__titulo{
+                    padding: 0;
+                    margin: 0;
                     @include mixins.ff-fs-cl(variaveis.$ft-terciaria, 2rem, variaveis.$cor-branco);
                     @media screen and (max-width: 410px){
                         font-size: 1.2rem;

@@ -557,14 +557,14 @@ body {
 .contato .contato__elementos .contato__elementos_mapa {
   margin-bottom: 1rem;
   width: 100%;
-  height: 65%;
+  height: 80%;
   border: 1;
   border-radius: 20px;
 }
 .contato .contato__elementos .contato__elementos_atendente {
   position: absolute;
   right: 1rem;
-  top: 14rem;
+  bottom: 1rem;
   width: 12rem;
   border-radius: 360px;
   background-color: #70e7dc;
@@ -579,6 +579,25 @@ body {
   width: 13.2rem;
   background-color: #08c7db;
 }
+@media screen and (max-width: 1160px) {
+  .contato .contato__elementos .contato__elementos_atendente {
+    width: 8rem;
+    bottom: 1rem;
+  }
+  .contato .contato__elementos .contato__elementos_atendente:hover {
+    width: 9.2rem;
+    background-color: #08c7db;
+  }
+}
+@media screen and (max-width: 555px) {
+  .contato .contato__elementos .contato__elementos_atendente {
+    width: 5rem;
+  }
+  .contato .contato__elementos .contato__elementos_atendente:hover {
+    width: 6.2rem;
+    background-color: #08c7db;
+  }
+}
 .contato .contato__elementos .contato__elementos_infos {
   width: 100%;
   display: flex;
@@ -592,6 +611,16 @@ body {
   color: #fff;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 1160px) {
+  .contato .contato__elementos .contato__elementos_infos .contato__elementos_infos_titulo {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 555px) {
+  .contato .contato__elementos .contato__elementos_infos .contato__elementos_infos_titulo {
+    font-size: 1rem;
+  }
+}
 .contato .contato__elementos .contato__elementos_infos .contato__elementos_list {
   list-style-type: none;
   display: flex;
@@ -601,6 +630,13 @@ body {
   flex-wrap: wrap;
   width: 100%;
   gap: 40px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1160px) {
+  .contato .contato__elementos .contato__elementos_infos .contato__elementos_list {
+    gap: 10px;
+  }
 }
 .contato .contato__elementos .contato__elementos_infos .contato__elementos_list .contato__elementos_list_item .contato__elementos_list_link {
   padding: 2rem;
@@ -629,9 +665,32 @@ body {
   top: 0;
   z-index: 1;
 }
+@media screen and (max-width: 1160px) {
+  .contato .contato__elementos .contato__elementos_infos .contato__elementos_list .contato__elementos_list_item .contato__elementos_list_link {
+    padding: 1rem;
+    width: 12rem;
+  }
+}
+@media screen and (max-width: 555px) {
+  .contato .contato__elementos .contato__elementos_infos .contato__elementos_list .contato__elementos_list_item .contato__elementos_list_link {
+    width: 5rem;
+  }
+  .contato .contato__elementos .contato__elementos_infos .contato__elementos_list .contato__elementos_list_item .contato__elementos_list_link:hover .contato__elementos_list_img {
+    position: inherit;
+    right: 0;
+  }
+  .contato .contato__elementos .contato__elementos_infos .contato__elementos_list .contato__elementos_list_item .contato__elementos_list_link:hover .contato__elementos_list_texto, .contato .contato__elementos .contato__elementos_infos .contato__elementos_list .contato__elementos_list_item .contato__elementos_list_link:hover .contato__elementos_list_texto_email {
+    display: none;
+  }
+}
 .contato .contato__elementos .contato__elementos_infos .contato__elementos_list .contato__elementos_list_item .contato__elementos_list_link .contato__elementos_list_img {
   width: 50px;
   transition: right 0.5s ease-in-out;
+}
+@media screen and (max-width: 1160px) {
+  .contato .contato__elementos .contato__elementos_infos .contato__elementos_list .contato__elementos_list_item .contato__elementos_list_link .contato__elementos_list_img {
+    width: 40px;
+  }
 }
 .contato .contato__elementos .contato__elementos_infos .contato__elementos_list .contato__elementos_list_item .contato__elementos_list_link .contato__elementos_list_texto {
   font-family: "Merienda", cursive;
@@ -645,6 +704,16 @@ body {
   top: 90%;
   z-index: -1;
 }
+@media screen and (max-width: 1160px) {
+  .contato .contato__elementos .contato__elementos_infos .contato__elementos_list .contato__elementos_list_item .contato__elementos_list_link .contato__elementos_list_texto {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 555px) {
+  .contato .contato__elementos .contato__elementos_infos .contato__elementos_list .contato__elementos_list_item .contato__elementos_list_link .contato__elementos_list_texto {
+    display: none;
+  }
+}
 .contato .contato__elementos .contato__elementos_infos .contato__elementos_list .contato__elementos_list_item .contato__elementos_list_link .contato__elementos_list_texto_email {
   font-family: "Merienda", cursive;
   font-size: 1rem;
@@ -656,6 +725,16 @@ body {
   visibility: hidden;
   z-index: -1;
   transition: opacity 0.5s ease-in-out, visibility 0.3s ease-in-out;
+}
+@media screen and (max-width: 1160px) {
+  .contato .contato__elementos .contato__elementos_infos .contato__elementos_list .contato__elementos_list_item .contato__elementos_list_link .contato__elementos_list_texto_email {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 555px) {
+  .contato .contato__elementos .contato__elementos_infos .contato__elementos_list .contato__elementos_list_item .contato__elementos_list_link .contato__elementos_list_texto_email {
+    display: none;
+  }
 }
 
 .rodape {

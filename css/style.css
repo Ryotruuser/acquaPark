@@ -529,6 +529,11 @@ body {
     width: 5rem;
   }
 }
+@media screen and (max-width: 406px) {
+  .galeria .galeria__comentarios #splide-comentarios .splide__track .splide__list .splide__slide .splide__img {
+    width: 4rem;
+  }
+}
 .galeria .galeria__comentarios #splide-comentarios .splide__track .splide__list .splide__slide .splide__infos .splide__titulo {
   font-family: "Lobster", sans-serif;
   font-size: 1.2rem;
@@ -538,6 +543,11 @@ body {
 @media screen and (max-width: 1280px) {
   .galeria .galeria__comentarios #splide-comentarios .splide__track .splide__list .splide__slide .splide__infos .splide__titulo {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 406px) {
+  .galeria .galeria__comentarios #splide-comentarios .splide__track .splide__list .splide__slide .splide__infos .splide__titulo {
+    font-size: 0.8rem;
   }
 }
 .galeria .galeria__comentarios #splide-comentarios .splide__track .splide__list .splide__slide .splide__infos .splide__texto {
@@ -553,6 +563,11 @@ body {
 @media screen and (max-width: 1420px) {
   .galeria .galeria__comentarios #splide-comentarios .splide__track .splide__list .splide__slide .splide__infos .splide__texto {
     font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 406px) {
+  .galeria .galeria__comentarios #splide-comentarios .splide__track .splide__list .splide__slide .splide__infos .splide__texto {
+    font-size: 0.65rem;
   }
 }
 

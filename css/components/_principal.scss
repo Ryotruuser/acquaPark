@@ -66,6 +66,9 @@
                 @include mixins.ff-fs-cl(variaveis.$ft-alternativo, .85rem, variaveis.$cor-preto);
                 font-weight: 390;
                 line-height: 1.2rem;
+                @media screen and (max-width: 375px){
+                    font-size: .7rem;
+                }
             }
             .mlateral__card_info_btn{
                 text-decoration: none;

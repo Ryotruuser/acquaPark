@@ -258,6 +258,11 @@ body {
   font-weight: 390;
   line-height: 1.2rem;
 }
+@media screen and (max-width: 375px) {
+  .principal .mlateral__card .mlateral__card_info .mlateral__card_info_texto {
+    font-size: 0.7rem;
+  }
+}
 .principal .mlateral__card .mlateral__card_info .mlateral__card_info_btn {
   text-decoration: none;
   padding: 0.5rem 3rem;

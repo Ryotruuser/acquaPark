@@ -757,14 +757,43 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 1170px) {
+  .rodape .rodape__container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+  }
+}
+.rodape .rodape__container .footer__separador {
+  display: none;
+}
+@media screen and (max-width: 1170px) {
+  .rodape .rodape__container .footer__separador {
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.1);
+  }
+}
 .rodape .rodape__container .rodape__container_list {
   list-style-type: none;
   line-height: 2rem;
+}
+@media screen and (max-width: 1170px) {
+  .rodape .rodape__container .rodape__container_list {
+    padding-bottom: 2rem;
+  }
 }
 .rodape .rodape__container .rodape__container_list .rodape__container__titulo {
   font-family: "Merienda", cursive;
   font-size: 2rem;
   color: #fff;
+}
+@media screen and (max-width: 410px) {
+  .rodape .rodape__container .rodape__container_list .rodape__container__titulo {
+    font-size: 1.2rem;
+  }
 }
 .rodape .rodape__container .rodape__container_list .rodape__container_list_item .rodape__container_list_link {
   text-decoration: none;
@@ -772,11 +801,35 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   color: #fff;
+  margin-left: 2rem;
 }
 .rodape .rodape__container .rodape__container_list .rodape__container_list_item .rodape__container_list_link:hover {
   color: #08c7db;
 }
+@media screen and (max-width: 410px) {
+  .rodape .rodape__container .rodape__container_list .rodape__container_list_item .rodape__container_list_link {
+    font-size: 1rem;
+  }
+}
 .rodape .rodape__container .rodape__container__list_social {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 2.5rem;
+}
+.rodape .rodape__container .rodape__container__list_social .social__titulo .rodape__container__titulo {
+  font-family: "Merienda", cursive;
+  font-size: 2rem;
+  color: #fff;
+}
+@media screen and (max-width: 410px) {
+  .rodape .rodape__container .rodape__container__list_social .social__titulo .rodape__container__titulo {
+    font-size: 1.2rem;
+  }
+}
+.rodape .rodape__container .rodape__container__list_social .rodape__contatiner__list_icon {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -784,11 +837,11 @@ body {
   justify-content: center;
   gap: 20px;
 }
-.rodape .rodape__container .rodape__container__list_social .rodape__container__titulo {
-  font-family: "Merienda", cursive;
-  font-size: 1.5rem;
-  color: #fff;
+.rodape .rodape__container .rodape__container__list_social .rodape__contatiner__list_icon .rodape__container_list_item .rodape__container_list_link .link__img {
+  width: 35px;
 }
-.rodape .rodape__container .rodape__container__list_social .rodape__container_list_item .rodape__container_list_link .link__img {
-  width: 30px;
+@media screen and (max-width: 410px) {
+  .rodape .rodape__container .rodape__container__list_social .rodape__contatiner__list_icon .rodape__container_list_item .rodape__container_list_link .link__img {
+    width: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */

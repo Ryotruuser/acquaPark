@@ -16,7 +16,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: linear-gradient(to bottom, #70e7dc, #70e7dc, #08c7db, #03bad6, #0380aa);
-  background-image: url(/assets/imgs/bg/bg.jpg);
+  background-image: url(/assets/imgs/bg/bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
